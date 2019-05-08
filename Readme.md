@@ -1,7 +1,7 @@
 ﻿# Личный проект «Седона»
 
 * Студент: [Tatiana](https://up.htmlacademy.ru/htmlcss/25/user/1072003).
-* Наставник: Андрей Колесников.
+* Наставник:[Андрей Колесников](https://up.htmlacademy.ru/htmlcss/25/user/477095).
 
 ---
 
