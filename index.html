@@ -5,8 +5,90 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
+	<header class="site-header">
+		<nav class="site-navigation">
+			<a class="header-logo">
+				<img src="img/logo.png" alt="logo">
+			</a>
+			<ul>
+				<li><a href="info.html">Информация</a></li>
+				<li><a href="foto-video.html">Фото и видео</a></li>
+				<li><a href="map_state.html">Карта штата</a></li>
+				<li><a href="hotels.html">Гостинницы</a></li>
+			</ul>
+		</nav>
+	</header>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+    <main class="container">
 
-  </body>
+    	<h1 class="visually-hidden"> Welcome to the Sedona!</h1>
+    	<p> Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
+
+    	<section class="reasons">
+    	<h2 class="visually-hidden">Причины</h2> 
+    		<ul class="reasons-list">
+    			<li class="reason_1">
+    				<h3> Настоящий городок </h3>
+    				<p> Седона-не аттракцион для туристов, там течёт своя жизнь</p>
+    				<img src="img/reason_1.jpg" alt="reason_1">
+    			</li>
+    			<li class="reason_2">
+    				<h3>Там есть мост дьявола</h3>
+    				<p>Да, по нему можно пройти! если,конечно, Вы осмелитесь</p>
+    				<img src="img/reason_2.jpg" alt="reason_2">
+    			</li>
+    			<li>
+    				<h3>Небольшая площадь</h3>
+    				<p>все достопримечательности находятся очень близко</p>
+    			</li>
+    			<li>
+    				<h3>Красивая дорога</h3>
+    				<p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+    			</li>
+    			<li>
+    				<h3>Мало туристов</h3>
+    				<p>Большинство едет в Гранд Каньон и толпится там</p>
+    			</li>
+    		</ul>
+		</section>
+
+    	<div class="housing"> 
+    		<h3>Жильё</h3>
+    		<p>рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+    	</div>
+    	<div class="food">
+    		<h3>Еда</h3>
+    		<p>Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
+    	</div>
+    	<div class="souvenirs">
+    		<h3>Сувениры</h3>
+    		<p>Не только китайского, но и местного производства!<p>
+    	</div>
+
+    	<section class="search-hotel">
+    		<h2> Заинтерисовались?</h2>
+    		<p>Укажите предполагаемые даты поездки, и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
+    		<!--Здесь будет форма-->
+    		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26192.568627687917!2d-111.81264831460311!3d34.85444130619846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1557755308516!5m2!1sru!2sru" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </main>
+
+    <footer class="site-footer">
+    	<span> #VISITSEDONA</span>
+    	<div class="footer-social">
+    		<ul>
+    			<li><a class="social-button" href="#">Facebook</a></li>
+    			<li><a class="social-button" href="#">YouTube</a></li>
+    			<li><a class="social-button" href="#">Twitter</a></li>
+    		</ul>
+    	</div>
+    	<p class="footer-copyright">
+    		<span> WEBSITE BY</span>
+    		<a class="button" href="https://htmlacademy.ru"> HTML Academy</a>
+    	</p>	
+    </footer>
+
+	<section class="modal modal-search">
+      <h2 class="search-hotel">Поиск гостиницы в Седоне</h2>
+    </section>
+ </body>
 </html>
