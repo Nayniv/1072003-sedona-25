@@ -88,7 +88,30 @@
     </footer>
 
 	<section class="modal modal-search">
-      <h2 class="search-hotel">Поиск гостиницы в Седоне</h2>
+       <form class="search-hotel" action="" method="POST">
+      	<button>
+      	 <h2 class="search-hotel">Поиск гостиницы в Седоне</h2>
+      	</button>
+      	<p>
+      		<label> Дата заезда:
+      			<input type="date" name="arrival" value="">
+      		</label>
+  		</p>
+      	<p>
+      		<label> Дата выезда: 
+      			<input type="date" name="depature" value="">
+     		 </label>	
+     	</p>
+     	<p>
+     		<label> Взрослые:
+     			<input type="number" min="0" step="1" value=""> 	
+     		</label>
+     		<label> Дети: 
+     			<input type="number" min="0" step="1" value="">
+     		</label>
+     	<p>	
+     	<input type="submit" value="найти">	 
+      </form>	
     </section>
  </body>
 </html>
