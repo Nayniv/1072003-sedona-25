@@ -13,11 +13,11 @@
 			<a class="header-logo" href="#">
 				<img src="img/logo.svg" alt="logo" width="140" height="71">
 			</a>
-			<ul>
-				<li><a href="info.html">Информация</a></li>
-				<li><a href="foto-video.html">Фото и видео</a></li>
-				<li><a href="map_state.html">Карта штата</a></li>
-				<li><a href="hotels.html">Гостинницы</a></li>
+			<ul class="site-navigation-list">
+				<li><a class="site-navigation-link" href="info.html">Информация</a></li>
+				<li><a class="site-navigation-link" href="foto-video.html">Фото и видео</a></li>
+				<li><a class="site-navigation-link" href="map_state.html">Карта штата</a></li>
+				<li><a class="site-navigation-link" href="hotels.html">Гостинницы</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -25,7 +25,7 @@
     <main class="container">
 
     	<h1 class="visually-hidden"> Welcome to the Sedona!</h1>
-    	<p> Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+    	<p class="banner"> Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
 
     	<section class="reasons">
     	<h2 class="visually-hidden">Причины</h2> 
@@ -81,7 +81,7 @@
     <footer class="site-footer">
     	<span> #VISITSEDONA</span>
     	<div class="footer-social">
-    		<ul>
+    		<ul class="footer-social-list">
     			<li><a class="social-button" href="#">Facebook</a></li>
     			<li><a class="social-button" href="#">YouTube</a></li>
     			<li><a class="social-button" href="#">Twitter</a></li>
@@ -95,7 +95,7 @@
 
 	<section class="modal modal-search">
        <form class="search-hotel" action="" method="POST">
-      	<button type="button">
+      	<button class="button-search" type="button">
       	  Поиск гостиницы в Седоне
       	</button>
       	<p>
@@ -116,7 +116,9 @@
      			<input type="number" id="children" min="0" step="1" value="">
      		</label>
      	<p>	
-     	<input type="button" value="найти">	 
+     	<button class="button-find" type="button">
+          Найти
+        </button> 
       </form>	
     </section>
  </body>
