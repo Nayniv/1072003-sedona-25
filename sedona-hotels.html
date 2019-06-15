@@ -20,11 +20,73 @@
           <li><a class="site-navigation-link" href="info.html">Информация</a></li>
           <li><a class="site-navigation-link" href="foto-video.html">Фото и видео</a></li>
           <li><a class="site-navigation-link" href="map_state.html">Карта штата</a></li>
-          <li><a class="site-navigation-link" href="hotels.html">Гостинницы</a></li>
+          <li class="site-navigation-current"><a class="site-navigation-link">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
     <main class="container">
+      <section class="hotel-filter">
+        <form action="https://htmlacademy.ru/echo/" method="GET" class="filter">
+          <fieldset class="filter-hotel-options infrastructure">
+            <legend>
+              Инфраструктура:
+            </legend>
+            <ul class="filter-hotel-list">
+              <li class="filter-hotel-item"><input type="checkbox" name="pool" id="pool" class="visually-hidden" checked>
+                <label for="pool">Бассейн</label></li>
+              <li class="filter-hotel-item"><input type="checkbox" name="parking" id="parking" class="visually-hidden">
+                <label for="parking">Парковка</label></li>
+              <li class="filter-hotel-item"><input type="checkbox" name="wi-fi" id="wi-fi" class="visually-hidden">
+                <label for="wi-fi">wi-fi</label></li>
+            </ul>
+          </fieldset>
+          <fieldset class="filter-hotel-options type-of-housing">
+            <legend>
+              Тип жилья:
+            </legend>
+            <ul class="filter-hotel-list">
+              <li class="filter-hotel-item"><input type="checkbox" name="hotel" id="hotel" class="visually-hidden" checked>
+                <label for="hotel">Гостиница</label></li>
+              <li class="filter-hotel-item"><input type="checkbox" name="motel" id="motel" class="visually-hidden" checked>
+                <label for="motel">Мотель</label></li>
+              <li class="filter-hotel-item"> <input type="checkbox" name="apartments" id="apartments" class="visually-hidden" checked>
+                <label for="apartments">Апартаменты</label></li>
+            </ul>
+          </fieldset>
+          <div class="filter-range">
+            <p class="filter-range-title">Стоимость в сутки (р):</p>
+            <div class="price-controls">
+              <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+              <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+            </div>
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+                <div class="range-toggle range-toggle-min"></div>
+                <div class="range-toggle range-toggle-max"></div>
+              </div>
+            </div>
+            <button class="btn-transparent" type="submit">Показать</button>
+          </div>
+        </form>
+      </section>
+      <div class="hotels-sort" aria-label="Фильтр гостиниц Седоны">
+        <h3>Найдено: 3 </h3>
+        <p> Сортировка: </p>
+        <ul class="sort-type">
+          <li class="sort-type-item sort-item-active"><a>По цене</a></li>
+          <li class="sort-type-item"><a href="#">По типу</a></li>
+          <li class="sort-type-item"><a href="#">По рейтингу</a></li>
+        </ul>
+        <ul class="sort-type-direction">
+          <li class="sort-type-icon"><a href="#" aria-label="По возрастанию"><svg width="11" height="11">
+                <polygon points="0,10 5.5,0 11,10"></polygon>
+              </svg></a></li>
+          <li class="sort-type-icon sort-icon-active"><a href="#" aria-label="По убыванию"><svg width="11" height="11">
+                <polygon points="0,0 11,0 5.5,10"></polygon>
+              </svg></a></li>
+        </ul>
+      </div>
       <h1 class="visually-hidden">Отели Седоны</h1>
       <section class="hotels">
         <h2 class="visually-hidden">Отели</h2>
@@ -39,7 +101,7 @@
               <span class="hotel-info hotel-type"> Гостиница</span> <span class="hotel-info hotel-cost">от 4000 р.</span>
               <a class="button-hotels button-detail" href="#">Подробнее</a>
               <a class="button-hotels button-book" href="#">Забронировать</a>
-              <span class="rating-value">Ретинг: 8.5</span>
+              <span class="rating-value">Рейтинг: 8.5</span>
             </div>
           </li>
           <li class="hotels-item">
@@ -52,21 +114,20 @@
               <span class="hotel-info hotel-type"> Мотель</span> <span class="hotel-info hotel-cost">от 3000 р.</span>
               <a class="button-hotels button-detail" href="#">Подробнее</a>
               <a class="button-hotels button-book" href="#">Забронировать</a>
-              <span class="rating-value">Ретинг: 8.9</span>
+              <span class="rating-value">Рейтинг: 8.9</span>
             </div>
           </li>
           <li class="hotels-item">
             <img class="hotel-image" src="img/hotel_3.jpg" width="135" height="90" alt="Villas poco diablo">
-            </p>
             <div class="hotels-item-column">
               <h3>
-                <a class="hotels-link" href="hotels-item.html">Villas poco diablo</a>
+                <a class="hotels-link" href="hotels-item.html">Villas at poco diablo</a>
               </h3>
               <span class="rating rating-2"></span>
-              <span class="hotel-info hotel-type"> Аппартаменты</span> <span class="hotel-info hotel-cost">от 2000 р.</span>
+              <span class="hotel-info hotel-type"> Апартаменты</span> <span class="hotel-info hotel-cost">от 2000 р.</span>
               <a class="button-hotels button-detail" href="#">Подробнее</a>
               <a class="button-hotels button-book" href="#">Забронировать</a>
-              <span class="rating-value">Ретинг: 9.2</span>
+              <span class="rating-value">Рейтинг: 9.2</span>
             </div>
           </li>
         </ul>
@@ -84,9 +145,6 @@
         <a class="button" href="https://htmlacademy.ru/intensive/htmlcss"> <span class="visually-hidden">HTML Academy</span></a>
       </p>
     </footer>
-    <section class="modal modal-search">
-      <h2 class="search-hotel">Поиск гостиницы в Седоне</h2>
-    </section>
   </div>
 </body>
 

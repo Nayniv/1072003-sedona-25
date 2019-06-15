@@ -21,7 +21,6 @@
           <li><a class="site-navigation-link" href="foto-video.html">Фото и видео</a></li>
           <li><a class="site-navigation-link" href="map_state.html">Карта штата</a></li>
           <li><a class="site-navigation-link" href="sedona-hotels.html">Гостиницы</a></li>
-          
         </ul>
       </nav>
       <div class="header-bottom"><img src="img/welcome.svg" alt="" width="459" height="353">
@@ -34,53 +33,59 @@
         <h2 class="visually-hidden">Причины</h2>
         <p class="reason-text"> Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         <ul class="reasons-list">
-          <li class="reasons-list-item ">
-            <h3> Настоящий городок </h3>
-            <p> Седона-не аттракцион для туристов, там течёт своя жизнь</p>
-            <img src="img/reason_1.jpg" alt="reason_1">
-          </li>
           <li class="reasons-list-item">
-            <h3>Там есть мост дьявола</h3>
-            <p>Да, по нему можно пройти! если,конечно, Вы осмелитесь</p>
-            <img src="img/reason_2.jpg" alt="reason_2">
+            <div class="reason reason-1">
+              <h3> Настоящий<br>городок </h3>
+              <p> &ndash; №1 &ndash; </p>
+              <p> Седона &ndash; не аттракцион для туристов, там течёт своя жизнь</p>
+            </div>
+            <ul class="option-list">
+              <li class="option-list-item housing">
+                <h3>Жильё</h3>
+                <p>рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+              </li>
+              <li class="option-list-item food">
+                <h3>Еда</h3>
+                <p>Всегда заказывайте фирменный бургер, Вы&nbsp;не разочаруетесь!</p>
+              </li>
+              <li class="option-list-item souvenirs">
+                <h3>Сувениры</h3>
+                <p>Не только китайского, но и местного производства!<p>
+              </li>
+            </ul>
           </li>
-          <li class="reasons-list-item">
-            <h3>Небольшая площадь</h3>
+          <li class="reasons-list-item reason reason-2 ">
+            <h3>Там есть<br>мост дьявола</h3>
+            <p> &ndash; №2 &ndash; </p>
+            <p>Да, по нему можно пройти! если конечно Вы осмелитесь</p>
+          </li>
+          <li class="reasons-list-item reason">
+            <h3>Небольшая<br>площадь</h3>
+            <p> &ndash; №3 &ndash; </p>
             <p>все достопримечательности находятся очень близко</p>
           </li>
-          <li class="reasons-list-item">
-            <h3>Красивая дорога</h3>
-            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          <li class="reasons-list-item reason">
+            <h3>Красивая<br>дорога</h3>
+            <p> &ndash; №4 &ndash; </p>
+            <p>Ехать в Седону из Лас-Вегаса совсем не&nbsp;скучно!</p>
           </li>
-          <li class="reasons-list-item">
-            <h3>Мало туристов</h3>
-            <p>Большинство едет в Гранд Каньон и толпится там!</p>
+          <li class="reasons-list-item reason">
+            <h3>Мало<br>туристов</h3>
+            <p> &ndash; №5 &ndash; </p>
+            <p>Большинство едет в Гранд Каньон и&nbsp;толпится там!</p>
           </li>
         </ul>
       </section>
-      <div class="housing">
-        <h3>Жильё</h3>
-        <p>рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-      </div>
-      <div class="food">
-        <h3>Еда</h3>
-        <p>Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
-      </div>
-      <div class="souvenirs">
-        <h3>Сувениры</h3>
-        <p>Не только китайского, но и местного производства!<p>
-      </div>
       <section class="search-hotel">
-        <h2> Заинтерисовались?</h2>
+        <h2> Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки,<br> и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
       </section>
-      <!--Здесь будет форма-->
       <div class="search-container">
-        <button class="button-search" type="button" >
+        <button class="button-search" type="button">
           Поиск гостиницы в Седоне
         </button>
         <section class="modal modal-search">
-          <form class="search-form" action="" method="GET">
+          <form class="search-form" action="https://htmlacademy.ru/echo/" method="GET">
             <p>
               <label for="arrival"> Дата заезда:</label>
               <input class="form-date" type="text" id="arrival" name="arrival" value="24 Апреля 2017">
@@ -94,12 +99,12 @@
             <p class="guest adults">
               <label for="adults"> Взрослые:</label>
               <button type="button" class="form-button">&ndash;</button>
-              <input type="text" id="adults" min="0" step="1" value="2">
+              <input type="text" id="adults" value="2">
               <button type="button" class="form-button">+</button>
             </p>
             <p class="guest children"><label for="children"> Дети:</label>
               <button type="button" class="form-button">&ndash;</button>
-              <input type="text" id="children" min="0" step="1" value="0">
+              <input type="text" id="children" value="0">
               <button type="button" class="form-button">+</button>
             </p>
             <button class="button-find" type="button">
@@ -107,7 +112,7 @@
             </button>
           </form>
         </section>
-        <img src="img/map.jpg" width="1200" height="450">
+        <img class="map" src="img/map.jpg" width="1200" height="475" alt="Седона, штат Аризона, США">
         <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26192.568627687917!2d-111.81264831460311!3d34.85444130619846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1557755308516!5m2!1sru!2sru" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe> -->
       </div>
     </main>
@@ -119,8 +124,8 @@
         <li><a class="social-button youtube" href="#"><span class="visually-hidden">YouTube</span></a></li>
       </ul>
       <p class="footer-copyright">
-        <span> WEBSITE BY</span>
-        <a class="button" href="https://htmlacademy.ru/intensive/htmlcss"> <span class="visually-hidden">HTML Academy</span></a>
+        <span>WEBSITE BY</span>
+        <a class="button" href="https://htmlacademy.ru/intensive/htmlcss"><span class="visually-hidden">HTML Academy</span></a>
       </p>
     </footer>
   </div>
