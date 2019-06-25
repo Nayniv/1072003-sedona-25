@@ -13,7 +13,7 @@ buttonSearch.addEventListener("click", function() {
 });
 
 formSearch.addEventListener('transitionend', function() {
-  if (!formSearch.classList.contains('searh-form-hidden')) arrival.focus();
+  if (!formSearch.classList.contains('search-form-hidden')) arrival.focus();
 });
 
 formSearch.addEventListener("submit", function(evt) {
