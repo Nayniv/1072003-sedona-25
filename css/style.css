@@ -127,6 +127,11 @@ a {
   padding: 0;
 }
 
+.option-list-item {
+  margin: 0;
+  padding: 0;
+}
+
 .reason {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -139,7 +144,12 @@ a {
 }
 
 .reasons-list h3 {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
   margin-bottom: 23px;
+  padding: 0px 60px 0px 60px;
+  text-align: center;
 
   font-size: 21px;
   line-height: 1;
@@ -1296,16 +1306,25 @@ a {
   padding: 32px 101px 36px 132px;
 }
 
+.map-pic {
+position: absolute;
+-webkit-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+     -o-transform: translateY(0%);
+        transform: translateY(0%);
 
-
-.map {
-  margin-bottom: -128px;
+z-index: -1;
 }
+
+/* .map {
+  margin-bottom: -128px;
+} */
 
 
 
 .footer-main-wrap {
   position: relative;
+  margin-top: -128px;
 
   background-color: rgba(255, 255, 255, 0.9);
 }
