@@ -8,7 +8,8 @@ var children = formSearch.querySelector("[name=children]");
 
 
 
-buttonSearch.addEventListener("click", function() {
+buttonSearch.addEventListener("click", function(evt) {
+  evt.preventDefault();
   formSearch.classList.toggle("search-form-hidden");
 });
 
